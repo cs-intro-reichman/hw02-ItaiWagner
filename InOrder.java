@@ -4,6 +4,26 @@
  */
 public class InOrder {
 	public static void main (String[] args) {
-		//// Write your code here
+        // Setting the upper bound and creating and printing the first random number
+		int upperBound = 10;
+        int currentNumber = (int) (Math.random() * upperBound);
+
+        System.out.print(currentNumber + " ");
+		
+		// as long as the last number that was printed is less than the upperbound 
+		// the loop keeps running
+        while (currentNumber < upperBound) {
+            // generating the next number
+			int nextNumber = (int) (Math.random() * upperBound);
+			
+			// if the the next number and the last number form a non-decreasing sequence it prints the next number
+			// if not, it breaks the loop by setting the last number to the upper bound
+            if (nextNumber >= currentNumber) {
+                System.out.print(nextNumber + " ");
+                currentNumber = nextNumber;
+			} else {
+				currentNumber = upperBound;
+			}
+		}
 	}
 }

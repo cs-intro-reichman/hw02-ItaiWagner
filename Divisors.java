@@ -3,6 +3,13 @@
  */
 public class Divisors {
 	public static void main (String[] args) {
-		//// Put your code here
+		int inputNumber = Integer.parseInt(args[0]);
+		int d = 1;
+		while (d <= inputNumber) {
+			if ((inputNumber % d) == 0) {
+				System.out.println(d);
+			}
+			d++;
+		}
 	}
 }
