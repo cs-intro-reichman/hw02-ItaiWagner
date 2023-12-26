@@ -65,7 +65,7 @@ public class OneOfEachStats {
 		System.out.println("The most common number of children is 2.");
 	} else if ((familyOfTwo == familyOfFour) && (familyOfThree == familyOfTwo)) {
 		System.out.println("The most common number of children is 2.");
-	System.out.println()
+	System.out.println();
 	}
 	}
 }

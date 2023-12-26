@@ -6,18 +6,20 @@ public class DamkaBoard {
 		int inputNum = Integer.parseInt(args[0]);
 		
 		int line = 1;
+		System.out.println();
 		
 		while (line <= inputNum) {
 			int len = 1;
-			System.out.println();
 			// if the line is even the line will start with " "
-			if ((line % 2) == 0) {
-				System.out.print(" ");
-			}
 			while (len <= inputNum) {
-				System.out.print("* ");
+				if ((line % 2) == 0) {
+					System.out.print(" *");
+				} else {
+					System.out.print("* ");
+				}
 				len++;
 			}
+			System.out.println();
 			line++;
 		}
 	}
