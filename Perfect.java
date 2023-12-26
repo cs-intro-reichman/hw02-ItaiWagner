@@ -6,7 +6,7 @@ public class Perfect {
 		int inputNum = Integer.parseInt(args[0]);
 		
 		// Sets an initial string
-		String outStr = "The number " + inputNum + " is a perfect number since " + inputNum + " = 1";
+		String outStr = inputNum + " is a perfect number since " + inputNum + " = 1";
 		int d = 1;
 		int sumCheck = 1;
 		while (d < inputNum) {

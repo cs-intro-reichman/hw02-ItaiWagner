@@ -14,9 +14,11 @@ public class Reverse {
 		// checks if the string lenhth is even or odd to find the middle character
 		if ((stringLength % 2) == 0) {
 			int midIndex = (stringLength - 1) / 2;
+			System.out.println()
 			System.out.println("The middle character is " + s.charAt(midIndex));
 		} else {
 			int midIndex = stringLength / 2;
+			System.out.println()
 			System.out.println("The middle character is " + s.charAt(midIndex));
 		}	
 	}

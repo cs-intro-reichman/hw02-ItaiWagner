@@ -9,6 +9,7 @@ public class DamkaBoard {
 		
 		while (line <= inputNum) {
 			int len = 1;
+			System.out.println();
 			// if the line is even the line will start with " "
 			if ((line % 2) == 0) {
 				System.out.print(" ");
@@ -17,7 +18,6 @@ public class DamkaBoard {
 				System.out.print("* ");
 				len++;
 			}
-			System.out.println();
 			line++;
 		}
 	}
