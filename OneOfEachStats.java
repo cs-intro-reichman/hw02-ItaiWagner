@@ -9,7 +9,7 @@ import java.util.Random;
  */
 public class OneOfEachStats {
 	public static void main (String[] args) {
-		// Gets the two command-line arguments
+		// Gets the two command-line arguments TODO: no need this comment
 		int T = Integer.parseInt(args[0]);
 		int seed = Integer.parseInt(args[1]);
 		// Initailizes a random numbers generator with the given seed value
@@ -24,7 +24,7 @@ public class OneOfEachStats {
 		// Running the loop T times
 		for (int i = 1; i <= T; i++) {
 			
-			// Setting the inner-scope vairables
+			// Setting the inner-scope vairables TODO: no need this comment
 			int boysNum = 0;
 			int girlsNum = 0;
 			int totalNum = 0;
@@ -47,6 +47,7 @@ public class OneOfEachStats {
 			totalTnums = totalTnums + totalNum;
 		}
 		
+		// TODO: what happened here with the identations? move everything to right
 	System.out.println("Average: " + (totalTnums / T) + " children to get at least one of each gender.");
 	System.out.println("Number of families with 2 children: " + familyOfTwo);
 	System.out.println("Number of families with 3 children: " + familyOfThree);
