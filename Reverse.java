@@ -7,7 +7,7 @@ public class Reverse {
 		String s = args[0];
 		
 		int stringLength = s.length();
-		// Loop through the entire string length
+		// Loop through the entire string length TODO: thank you captain Obvious
 		for (int i = (stringLength - 1); i >= 0; i--) {
 			System.out.print(s.charAt(i));
 		}
